@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def register():
+    return "Hi";
     return render_template('login.html')
 
 @app.route('/welcom', methods=['post'])
